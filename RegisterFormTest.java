@@ -68,7 +68,24 @@ public class RegisterFormTest extends configSelenium {
 			inputConfirmPassword.sendKeys("11hsahd000");
 			
 			WebElement submitButton = web.findElement(By.xpath("/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[18]/td/input"));
-			inputPassword.click();
+			submitButton.click();
+			
+			
+			WebElement SignOff = web.findElement(By.xpath("/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[2]/td/table/tbody/tr/td[1]/a"));
+			SignOff.click();
+			
+			
+			WebElement inputUsername2 = web.findElement(By.xpath("/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[1]/td[2]/input"));
+			inputUsername2.click();
+			inputUsername2.sendKeys("Peki");
+			
+			WebElement inputPassword2 = web.findElement(By.xpath("/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[2]/td[2]/input"));
+			inputPassword2.click();
+			inputPassword2.sendKeys("11hsahd000");
+			
+			WebElement submitButton2 = web.findElement(By.xpath("/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[4]/td/input"));
+			submitButton2.click();
+			
 			
 			
 			
